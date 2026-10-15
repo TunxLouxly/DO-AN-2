@@ -36,6 +36,12 @@ ul { list-style: none; }
 .header {
     background: var(--mau-chinh);
     padding: 16px 0;
+    position: fixed;          /* dính trên cùng khi cuộn */
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
 }
 .header-inner {
     display: flex;            /* xếp các phần tử trên 1 hàng */
@@ -97,7 +103,7 @@ ul { list-style: none; }
     display: grid;
     grid-template-columns: 24% 1fr 24%;   /* 3 cột: menu | banner lớn | banner nhỏ */
     gap: 14px;
-    margin-top: 12px;
+    margin-top: 100px;
 }
 .hero-menu {
     background: #fff;
@@ -663,3 +669,49 @@ button.btn-danh-muc {
     background: var(--mau-phu);
     border-color: var(--mau-phu);
 }
+/* =========================================================
+   HEADER KHI ĐÃ ĐĂNG NHẬP (nhãn vai trò, nút quản trị)
+   ========================================================= */
+.vai-tro {
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #333;
+    background: #fff;
+}
+.vai-tro.vt-quantri  { background: var(--mau-phu); }
+.vai-tro.vt-nhanvien { background: #b3e5fc; }
+.vai-tro.vt-nguoidung { background: #c8e6c9; }
+
+.btn-quan-tri {
+    padding: 9px 18px;
+    border-radius: 30px;
+    background: var(--mau-phu);
+    color: #333;
+    font-weight: 700;
+}
+.btn-quan-tri:hover { background: #fff; text-decoration: none; }
+/* =========================================================
+   HEADER KHI ĐÃ ĐĂNG NHẬP (nhãn vai trò, nút quản trị)
+   ========================================================= */
+.vai-tro {
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #333;
+    background: #fff;
+}
+.vai-tro.vt-quantri  { background: var(--mau-phu); }
+.vai-tro.vt-nhanvien { background: #b3e5fc; }
+.vai-tro.vt-nguoidung { background: #c8e6c9; }
+
+.btn-quan-tri {
+    padding: 9px 18px;
+    border-radius: 30px;
+    background: var(--mau-phu);
+    color: #333;
+    font-weight: 700;
+}
+.btn-quan-tri:hover { background: #fff; text-decoration: none; }
