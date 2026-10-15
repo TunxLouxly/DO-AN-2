@@ -651,6 +651,8 @@ button.btn-danh-muc {
     color: var(--mau-chinh);
 }
 
+
+
 /* Đăng ký: nền trắng, chữ đỏ (nổi bật hơn). Rê chuột vào thì đổi sang vàng */
 .btn-dang-ky {
     border: 2px solid #fff;
